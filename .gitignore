@@ -1,0 +1,10 @@
+CMakeFiles
+build
+.vscode
+.cache
+ClubManager
+CMakeCache.txt
+compile_commands.json
+input.txt
+cmake_install.cmake
+Makefile
