@@ -1,0 +1,11 @@
+FROM debian:bullseye-slim
+
+RUN apt-get update && \
+    apt-get install -y mingw-w64 cmake make && \
+    apt-get clean
+
+WORKDIR /app
+
+COPY . .
+
+RUN x86_64-w64-mingw32-g++ -std=c++20 -O2 -o ClubManager.exe main.cpp utils.cpp ClubManager.cpp -Wall -Wextra -Werror -Wpedantic

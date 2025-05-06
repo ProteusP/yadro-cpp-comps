@@ -1,0 +1,10 @@
+./build
+CMakeCache.txt
+ClubManager
+./dockerfile_for_lin
+./dockerfile_for_win
+compile_commands.json
+README.md
+cmake_install.cmake
+CMakeFiles
+Makefile
