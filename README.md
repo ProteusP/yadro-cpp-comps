@@ -54,7 +54,7 @@ docker rm temp-win-cont
 ./ClubManager <input_file>
 ```
 
-### Window
+### Windows
 
 ```PowerShell
 ClubManager.exe <input_file>
