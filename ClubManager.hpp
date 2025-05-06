@@ -32,7 +32,7 @@ public:
   void finishDay();
   void printReport() const;
 
-  // private:
+private:
   size_t tableCount;
   size_t hourlyRate;
   std::chrono::system_clock::time_point openTime;
