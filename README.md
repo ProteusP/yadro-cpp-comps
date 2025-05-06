@@ -54,10 +54,21 @@ docker rm temp-win-cont
 ./ClubManager <input_file>
 ```
 
+Например, запуск с данными из ТЗ:
+
+```bash
+./ClubManager input.txt
+```
 ### Windows
 
 ```PowerShell
 ClubManager.exe <input_file>
+```
+
+Например, запуск с данными из ТЗ:
+
+```PowerShell
+ClubManager.exe input.txt
 ```
 
 ## Тесты
