@@ -1,7 +1,7 @@
 FROM debian:bullseye-slim
 
 RUN apt-get update && \
-    apt-get install -y mingw-w64 cmake make && \
+    apt-get install -y mingw-w64 && \
     apt-get clean
 
 WORKDIR /app

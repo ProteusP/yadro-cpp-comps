@@ -10,5 +10,5 @@ WORKDIR /app
 
 COPY . .
 
-RUN mkdir -p build
+RUN mkdir build
 RUN cd build && cmake .. && make && mv ./ClubManager ../
