@@ -2,6 +2,7 @@
 #include "event.hpp"
 #include "utils.hpp"
 #include <algorithm>
+#include <cstddef>
 #include <exception>
 #include <iomanip>
 #include <iostream>
@@ -66,7 +67,7 @@ bool ClubManager::loadConfig(std::istream &in) {
     return false;
   }
 
-  for (int i = 1; i <= tableCount; ++i) {
+  for (size_t i = 1; i <= tableCount; ++i) {
     tables[i] = TableStats();
   }
 
@@ -92,7 +93,7 @@ bool ClubManager::processEvent(const std::string &line) {
   }
 
   std::string name;
-  int table;
+  size_t table;
   iss >> name;
 
   std::string leftOver;

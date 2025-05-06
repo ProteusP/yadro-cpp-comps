@@ -3,6 +3,7 @@
 
 #include "event.hpp"
 #include <chrono>
+#include <cstddef>
 #include <map>
 #include <optional>
 #include <queue>
@@ -32,12 +33,12 @@ public:
   void printReport() const;
 
   // private:
-  int tableCount;
-  int hourlyRate;
+  size_t tableCount;
+  size_t hourlyRate;
   std::chrono::system_clock::time_point openTime;
   std::chrono::system_clock::time_point closeTtime;
   std::map<std::string, ClientInfo> clients;
-  std::map<int, TableStats> tables;
+  std::map<size_t, TableStats> tables;
   std::queue<std::string> waiting;
   std::vector<Event> log;
 
